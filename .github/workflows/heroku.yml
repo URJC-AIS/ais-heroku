@@ -61,4 +61,4 @@ jobs:
       - name: Login in Heroku
         run: heroku container:login
       - name: Deploy to Heroku
-        run: heroku container:release web
+        run: heroku container:release web 
