@@ -62,3 +62,11 @@ jobs:
         run: heroku container:login
       - name: Deploy to Heroku
         run: heroku container:release web
+
+  tests_on_heroku:
+    name: Execute API REST and Selenium test to Heroku App
+    runs-on: ubuntu-latest
+    needs: [deploy_to_heroku]
+    steps:
+      - name: API REST test
+        run: mvn -B "-Dtest=es.urjc.code.daw.library.e2e.rest.*Test" "-Dhost=host" test
