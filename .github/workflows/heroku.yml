@@ -63,4 +63,4 @@ jobs:
       - name: Deploy to Heroku
         run: heroku container:release web
       - name: API REST test
-        run: mvn -B "-Dtest=es.urjc.code.daw.library.e2e.rest.*Test" "-Dhost=host" test
+        run: mvn -B "-Dtest=es.urjc.code.daw.library.e2e.rest.*Test" "-Dhost=https://ais-pcerdan2018.herokuapp.com/" test
