@@ -1,4 +1,4 @@
-# AIS  Heroku
+# AIS  Heroku 2
 
 Este proyecto consta de un servidor REST sencillo para la gestión de items.
 
